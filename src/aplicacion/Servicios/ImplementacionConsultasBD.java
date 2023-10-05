@@ -249,7 +249,7 @@ public class ImplementacionConsultasBD implements InterfazConsultasBD {
 	}
 	/**
 	 * Método para saber si existe el usuario que pides.
-	 * @param listabd de la lista actual
+	 * @param numero para diferenciar
 	  *@param personaPorSeparado para saber el titulo
 	 * @return devuelve un boolean.
 	 * @author ASMP-28/09/2023
