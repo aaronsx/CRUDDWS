@@ -1,7 +1,7 @@
 package aplicacion.Entidades;
 /**
  * Entidad que contiene el catálogo de libros
- * @author Aaron-28/09/2023
+ * @author ASMP-28/09/2023
  */
 public class LibrosDto {
 	

@@ -31,8 +31,6 @@ public class Main {
 		
 		 int opcion=0;
 	
-		
-		
 				while(!cerrarMenu) 
 				{	
 					try {
@@ -45,7 +43,10 @@ public class Main {
 						{
 							System.out.println("[INFO] - Has seleccionado la opcion " + opcion);
 						}
-						//Segun la opcion de hace llama a registrar empleado, modificar empleado y guardar en fichero
+						//Llama a insertar a la base de datos
+						//select a la base de datos
+						//Actualiza la base de datos
+						//Elimina en la base de datos
 						switch (opcion) 
 						{			
 							case 1:

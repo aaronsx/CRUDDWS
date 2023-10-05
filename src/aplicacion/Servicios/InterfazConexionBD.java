@@ -3,7 +3,7 @@ package aplicacion.Servicios;
 import java.sql.Connection;
 
 /**
- * Clase que realiza la conexión a PostgreSQL de forma parametrizada.
+ * Clase que realiza la conexión a la base de datos de forma parametrizada.
  * @author ASMP-28/09/2023
  */
 public interface InterfazConexionBD {
@@ -17,7 +17,7 @@ public interface InterfazConexionBD {
 	
 	/**
 	 * Método para cerrar la conexion con la bbdd.
-	 * @param Connection y cierra La coneccion de la bbdd.
+	 * @param Connection
 	 * @author ASMP-28/09/2023
 	 */
 	public void CerrarConexionConBBDD(Connection conexion);

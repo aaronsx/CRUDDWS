@@ -17,7 +17,7 @@ public interface InterfazConsultasBD {
 	public ArrayList<LibrosDto> SeleccionarEnBBDD(boolean saberPedir);
 	/**
 	 * Método que realiza consulta que no te devuelven nada.
-	 * @param indiceFormato indicar si quieres eliminar actualizar o borrar.
+	 * @param indiceFormato indicar a donde ir.
 	 * @author ASMP-28/09/2023
 	 */
 	public void ModificarEnBBDD(Integer indiceFormato);
