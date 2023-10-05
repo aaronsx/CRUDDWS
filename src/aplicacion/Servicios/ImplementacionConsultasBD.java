@@ -130,7 +130,7 @@ public class ImplementacionConsultasBD implements InterfazConsultasBD {
 						{
 							ArrayList<LibrosDto> listabdActual = new ArrayList<>();
 							listabdActual=SeleccionarEnBBDD(true);
-							//En este bucle busca sobre la base de datos y te dice cual se repite
+							//Busca sobre la base de datos y te dice cual se repite
 								for(LibrosDto librosUs:listabd)
 									for (LibrosDto librosActual : listabdActual) 
 								           if ((librosUs.getIsbn().equals(librosActual.getIsbn())))
@@ -150,7 +150,7 @@ public class ImplementacionConsultasBD implements InterfazConsultasBD {
 					Scanner pregun = new Scanner(System.in);
 					System.out.println("Que libro quieres eliminar?(titulo)");	
 					String titulo=pregun.nextLine();
-					//Se pide el titulo y se pasa a la a un  metodo privado y devuelve true o false
+					
 					if(EnContrarSiExiste(titulo,1))
 					{
 							if(MetodoSiono("Seguro que quieres eliminar?"))
@@ -175,13 +175,13 @@ public class ImplementacionConsultasBD implements InterfazConsultasBD {
 					System.out.println("Que libro quieres modificar?(titulo)");	
 					String titulo=pregun.nextLine();
 					if(EnContrarSiExiste(titulo,1)){
-						//Metodo para que devuelva toda la bd y se guarde en una lista
+						
 						listabdActual=SeleccionarEnBBDD(true);
 						String antiguoTitulo="";
 						String antiguoAutor="";
 						String antiguoIsbn="";
 						int antiguaEdicion=0;
-						//Bucle foreach que recorre la lista actual y "una copia"
+						
 						for (LibrosDto librosActual : listabdActual) 
 					        if ((titulo.equals(librosActual.getTitulo())))
 					        {
@@ -260,7 +260,7 @@ public class ImplementacionConsultasBD implements InterfazConsultasBD {
 		listabdActual=SeleccionarEnBBDD(true);
 		if(num==0)
 		{
-			//Si introduce una titulo y se recorre toda la lista para saber si existe o no
+			//Si introduce un Isbn y se recorre toda la lista para saber si existe o no
 			for (LibrosDto librosActual : listabdActual) 
 		        if ((personaPorSeparado.equals(librosActual.getIsbn())))
 		        	return true;
@@ -282,7 +282,7 @@ public class ImplementacionConsultasBD implements InterfazConsultasBD {
 	 */
 	private boolean MetodoSiono(String txt) 
 	{
-		//Preguntar si o si no
+		
 		Scanner pregunta=new Scanner(System.in);
 		String sioNo;
 		boolean cerrarmenu=true;

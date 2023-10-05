@@ -10,7 +10,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 /**
  * Implementación de la interfaz de conexión a base de datos.
- * @author Aaron-28/09/2023
+ * @author ASMP-28/09/2023
  */
 public class ImplementacionConexionBD implements InterfazConexionBD {
 
@@ -78,7 +78,7 @@ public class ImplementacionConexionBD implements InterfazConexionBD {
 	
 	/**
 	 * Método configura los parámetros de la conexión a la base de datos a partir del .properties
-	 * @author Aaron-28/09/2023
+	 * @author ASMP-28/09/2023
 	 * @return parámetros para abrir la conexión
 	 */
 	private String[] configuracionConexion() {
