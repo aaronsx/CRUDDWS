@@ -276,7 +276,7 @@ public class ImplementacionConsultasBD implements InterfazConsultasBD {
 	}
 	/**
 	 * Método Preguntar si quieres hacer una interaccion o no.
-	 * @param dos string uno para hacer la pregunta y captura la respuesta.
+	 * @param string para hacer la pregunta.
 	 * @return devuelve un boolean.
 	 * @author ASMP-28/09/2023
 	 */
