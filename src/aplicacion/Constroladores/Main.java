@@ -65,7 +65,7 @@ public class Main {
 								consul.ModificarEnBBDD(1);
 								break;
 							case 0:
-								JOptionPane.showMessageDialog(null,"¡Gracias por visitar nuestra Empresa!");
+								JOptionPane.showMessageDialog(null,"¡Se cierra la aplicacion!");
 								cerrarMenu = true;
 								break;
 							default:

@@ -52,18 +52,20 @@ public class ImplementacionConsultasBD implements InterfazConsultasBD {
 			}
 			else
 			{
-					//Select filtrando
-					System.out.print("Introduce el titulo del libro");
-					String titulo=pregun.nextLine();
-					query=CambiarStringConsultaParaBD(3);
-					PreparedStatement sentencia =conexion.prepareStatement(query);
-					sentencia.setString(1,titulo);
-					resultadoConsulta = sentencia.executeQuery();
-					listabd = adto.resultsALibrosDto(resultadoConsulta);
-					int i = listabd.size();
-					System.out.println("[INFORMACIÓN-ImplementacionConsultasBBDD-SeleccionarEnBBDD] Número libros: "+i);
-					System.out.println("[INFORMACIÓN-ImplementacionConsultasBBDD-SeleccionarEnBBDD] Cierre conexión, declaración y resultado");				
-				    resultadoConsulta.close();
+					do {
+						//Select filtrando
+						System.out.print("Introduce el titulo del libro");
+						String titulo=pregun.nextLine();
+						query=CambiarStringConsultaParaBD(3);
+						PreparedStatement sentencia =conexion.prepareStatement(query);
+						sentencia.setString(1,titulo);
+						resultadoConsulta = sentencia.executeQuery();
+						listabd = adto.resultsALibrosDto(resultadoConsulta);
+						int i = listabd.size();
+						System.out.println("[INFORMACIÓN-ImplementacionConsultasBBDD-SeleccionarEnBBDD] Número libros: "+i);
+						System.out.println("[INFORMACIÓN-ImplementacionConsultasBBDD-SeleccionarEnBBDD] Cierre conexión, declaración y resultado");				
+					    resultadoConsulta.close();
+					}while(MetodoSiono("Quieres hacer select otro usuario?"));
 			}
 		
 		} catch (SQLException e) 
